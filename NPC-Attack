@@ -1,0 +1,8 @@
+.NPC-Attack-1
+/w gm %{selected|repeating_npcaction_$0_npc_action}
+
+.NPC-Attack-2
+/w gm %{selected|repeating_npcaction_$1_npc_action}
+
+.NPC-Attack-3
+/w gm %{selected|repeating_npcaction_$2_npc_action}
