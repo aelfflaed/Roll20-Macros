@@ -1,0 +1,84 @@
+
+<!------------- macros ------------------->
+
+<!-- end curly bracket -->
+#b &#125; 
+
+<!-- strength -->
+#str [[@{selected|strength_mod}]][STR] ]]
+#strcalc +#str#b#b{{rname=^{strength-u#b#b#b{{mod=[[#str#b#b{{r1=[[@{selected|d20}+#str
+
+
+	
+<!-- dexterity -->
+#dex [[@{selected|dexterity_mod}]][DEX] ]]
+#dexcalc +#dex#b#b{{rname=^{dexterity-u#b#b#b{{mod=[[#dex#b#b{{r1=[[@{selected|d20}+#dex
+
+
+#dex +[[@{selected|dexterity_mod}]][DEX] ]]#b#b
+	{{rname=^{dexterity-u#b#b#b 
+	{{mod=[[ [[@{selected|dexterity_mod}]][DEX] ]]#b#b 
+	{{r1=[[@{selected|d20}+[[@{selected|dexterity_mod}]][DEX] ]]
+
+<!-- constitution -->
+#str [[@{selected|strength_mod}]][STR] ]]
+#strcalc +#str#b#b{{rname=^{strength-u#b#b#b{{mod=[[#str#b#b{{r1=[[@{selected|d20}+#str
+
+
+#con +[[@{selected|constitution_mod}]][CON] ]]#b#b 
+	{{rname=^{constitution-u#b#b#b
+	{{mod=[[ [[@{selected|constitution_mod}]][CON] ]]&#b#b 
+	{{r1=[[@{selected|d20}+[[@{selected|constitution_mod}]][CON] ]]
+	
+<!-- intelligence -->
+#str [[@{selected|strength_mod}]][STR] ]]
+#strcalc +#str#b#b{{rname=^{strength-u#b#b#b{{mod=[[#str#b#b{{r1=[[@{selected|d20}+#str
+
+
+#int +[[@{selected|intelligence_mod}]][INT] ]]&#b#b 
+	{{rname=^{intelligence-u#b#b#b
+	{{mod=[[ [[@{selected|intelligence_mod}]][INT] ]]&#b#b
+	{{r1=[[@{selected|d20}+[[@{selected|intelligence_mod}]][INT] ]]
+			
+<!-- wisdom -->
+#str [[@{selected|strength_mod}]][STR] ]]
+#strcalc +#str#b#b{{rname=^{strength-u#b#b#b{{mod=[[#str#b#b{{r1=[[@{selected|d20}+#str
+
+
+#int +[[@{selected|wisdom_mod}]][WIS] ]]#b#b 
+	{{rname=^{wisdom-u#b#b#b
+	{{mod=[[ [[@{selected|wisdom_mod}]][WIS] ]]#b#b 
+	{{r1=[[@{selected|d20}+[[@{selected|wisdom_mod}]][WIS] ]]
+
+<!-- charisma -->	
+#str [[@{selected|strength_mod}]][STR] ]]
+#strcalc +#str#b#b{{rname=^{strength-u#b#b#b{{mod=[[#str#b#b{{r1=[[@{selected|d20}+#str
+
+
+#cha +[[@{selected|charisma_mod}]][CHA] ]]#b#b 
+	{{rname=^{charisma-u#b#b#b
+	{{mod=[[ [[@{selected|charisma_mod}]][CHA] ]]#b#b 
+	{{r1=[[@{selected|d20}+[[@{selected|charisma_mod}]][CHA] ]]
+	
+	
+@{selected|wtype}&{template:simple} 
+@{selected|rtype}
+		
+?{Stat|
+	Strength, #str|
+	Dexterity, #dex|
+	Constitution, #con|
+	Intelligence, #int|
+	Wisdom, #wis|
+	Charisma, #cha}}} 
+	
+?{Stat|
+	Strength, #str|
+	Dexterity, #dex|
+	Constitution, #con|
+	Intelligence, #int|
+	Wisdom, #wis|
+	Charisma, #cha}}} 
+
+@{selected|global_skill_mod} 
+@{selected|charname_output}
